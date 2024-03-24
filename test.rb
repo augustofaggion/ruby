@@ -1,29 +1,12 @@
-# x = 0
+def digital_root(n)
+  while n >= 10
+  n = n.to_s.chars.map(&:to_i).sum
+  end
+  n
+end
+  # 493193  -->  4 + 9 + 3 + 1 + 9 + 3 = 29  -->  2 + 9 = 11  -->  1 + 1 = 2
 
-# while x <= 10
-#   if x == 0
-#     x += 1
-#     next
-#   elsif x.even?
-#     puts x
-#   end
-#   x += 1
-# end
-
-# # practice_each.rb
-# print "---------------------"
-# names = ['Bob', 'Joe', 'Steve', 'Janice', 'Susan', 'Helen']
-# x = 1
-# names.each do |name|
-#   puts "#{x}. #{name}"
-#   x += 1
-# end
+puts digital_root(493193)
 
 
-
-  # while gets.chomp != "yes" do
-  #   puts "do you have pizza?"
-  # end
-
-  
 
